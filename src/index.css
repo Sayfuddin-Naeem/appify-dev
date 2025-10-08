@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@theme{
+
+  /* color */
+  --color-bg-btn: #02A53B;
+  --color-bg-body: #f5f5f5;
+  --color-badge-01: #B9F8CF;
+  --color-badge-tx-01: #0B5E06;
+  --color-badge-02: #F8F3B9;
+  --color-badge-tx-02: #9C7700;
+  --color-bg-resolve: #E0E7FF;
+  --color-priority-01: #F83044;
+  --color-priority-02: #FEBB0C;
+  --color-dark-01: #130B2D;
+  --color-dark-02: rgba(0, 0, 0, 0.9);
+  --color-dark-03: #34485A;
+  --color-dark-04: #001931;
+  --color-dark-05: #627382;
+  --color-dark-06: #A1A1AA;
+  --color-dark-07: #FAFAFA;
+  --color-gradient-01: linear-gradient(125.07deg, #632EE3,#9F62F2 100%);
+  --color-gradient-02: linear-gradient(90.00deg, #54CF68, #00827A 100%);
+  
+
+  --shadow-card: 0px 4px 16px 0px rgba(0,0,0,0.08);
+  /* font  */
+  --font-inter: "Inter", sans-serif;
+
+}
+
+@layer base{
+  html {
+        font-size: 62.5%;
+        /* For 1rem = 10px base */
+  }
+
+  *,
+  *::before,
+  *::after{
+    font-family: var(--font-inter);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    box-sizing: border-box;
+  }
+}
+
+@layer components{
+  .bg-gradient{
+  background: var(--color-gradient-01); 
+}
+
+.bg-counter-01 {
+  background: url("./assets/images/vector1.png"), url("./assets/images/vector2.png"), var(--color-gradient-01);
+  background-repeat: no-repeat;
+  background-position: left, right, center;
+}
+
+.bg-counter-02 {
+  background: url("./assets/images/vector1.png"), url("./assets/images/vector2.png"), var(--color-gradient-02);
+  background-repeat: no-repeat;
+  background-position: left, right, center;
+}
+
+}
