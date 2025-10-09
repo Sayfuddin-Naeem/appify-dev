@@ -1,0 +1,506 @@
+[
+  {
+    "image": "https://i.ibb.co.com/6c50wNX4/daily-planner.webp",
+    "title": "ProTasker Planner",
+    "companyName": "Effortless Digital",
+    "id": 100,
+    "description": "The ultimate tool for project management and daily task planning. Features include calendar sync, team collaboration, and priority setting.",
+    "size": 68.3,
+    "reviews": 150000,
+    "ratingAvg": 4.5,
+    "downloads": 8500000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 75000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/j7cycKB/fit-quest.png",
+    "title": "FitQuest Coach",
+    "companyName": "Health Metrics Inc.",
+    "id": 201,
+    "description": "Personalized workout plans, nutritional tracking, and progress monitoring. Connects with all major fitness wearables.",
+    "size": 180.5,
+    "reviews": 320500,
+    "ratingAvg": 4.7,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 8500 },
+      { "name": "2 star", "count": 9500 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 82500 },
+      { "name": "5 star", "count": 190000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/S4jzbhhc/starShot.jpg",
+    "title": "StarShot Racer",
+    "companyName": "Nebula Games Studios",
+    "id": 403,
+    "description": "An action-packed futuristic racing game with stunning graphics and a massive career mode. Compete online against players worldwide.",
+    "size": 850.2,
+    "reviews": 750000,
+    "ratingAvg": 4.3,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 35000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 395000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/r8RVzZ7/vocab-master.png",
+    "title": "VocabMaster Language",
+    "companyName": "Global Learn Apps",
+    "id": 504,
+    "description": "Learn over 50 languages with interactive quizzes, flashcards, and native speaker audio. Gamified learning path to fluency.",
+    "size": 120.9,
+    "reviews": 600000,
+    "ratingAvg": 4.8,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 400000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/gLZfSnXD/quik-editor.png",
+    "title": "QuickEdit Photo Editor",
+    "companyName": "ImageCraft Tech",
+    "id": 605,
+    "description": "Professional-grade photo editing on the go. Includes filters, layers, brushes, and raw file support. Simple interface for quick results.",
+    "size": 210.0,
+    "reviews": 95000,
+    "ratingAvg": 4.4,
+    "downloads": 5500000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 29000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/8D51T8Qg/travel-mate.png",
+    "title": "TravelMate Guides",
+    "companyName": "Wanderlust Holdings",
+    "id": 706,
+    "description": "Offline maps, itinerary planning, and local recommendations for thousands of global destinations. Essential for backpackers and tourists.",
+    "size": 55.4,
+    "reviews": 40000,
+    "ratingAvg": 3.7,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 4500 },
+      { "name": "2 star", "count": 6500 },
+      { "name": "3 star", "count": 9000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/BV1L6SyH/weather-pulse.png",
+    "title": "WeatherPulse Pro",
+    "companyName": "Atmosphere Data Co.",
+    "id": 807,
+    "description": "Hyper-local, minute-by-minute weather forecasts. Includes rain alerts, severe weather warnings, and detailed radar maps.",
+    "size": 35.8,
+    "reviews": 250000,
+    "ratingAvg": 4.6,
+    "downloads": 18000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 13000 },
+      { "name": "4 star", "count": 75000 },
+      { "name": "5 star", "count": 150000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4wwKR9VH/home-style.png",
+    "title": "HomeStyle Decorator",
+    "companyName": "Augmented Reality Labs",
+    "id": 908,
+    "description": "Use augmented reality (AR) to visualize furniture and decor in your own home before you buy. Thousands of product catalogs integrated.",
+    "size": 350.7,
+    "reviews": 15000,
+    "ratingAvg": 4.9,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4RdV51KF/code-bug.png",
+    "title": "CodeBug Debugger",
+    "companyName": "Developer Tools Inc.",
+    "id": 1009,
+    "description": "A lightweight utility for developers to test code snippets, debug logic, and quickly convert data formats. Essential for daily coding tasks.",
+    "size": 15.2,
+    "reviews": 8000,
+    "ratingAvg": 3.5,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DPmwRYCP/recipe-genie.jpg",
+    "title": "RecipeGenie Cooking",
+    "companyName": "Culinary Tech Ltd.",
+    "id": 1211,
+    "description": "Thousands of recipes with step-by-step instructions and video guides. Filter by dietary needs, ingredients on hand, and preparation time.",
+    "size": 90.3,
+    "reviews": 65000,
+    "ratingAvg": 4.7,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 20500 },
+      { "name": "5 star", "count": 39000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/C3cVnzw8/budget-wise.png",
+    "title": "BudgetWise Finance",
+    "companyName": "Money Flow Apps",
+    "id": 1312,
+    "description": "Track your spending and manage monthly budgets easily. Securely link bank accounts for automatic categorization and financial insights.",
+    "size": 75.8,
+    "reviews": 210000,
+    "ratingAvg": 4.2,
+    "downloads": 11000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 37000 },
+      { "name": "4 star", "count": 65000 },
+      { "name": "5 star", "count": 75000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/N22kSWX8/doc-reader.png",
+    "title": "DocReader PDF Viewer",
+    "companyName": "Universal Utility Co.",
+    "id": 1413,
+    "description": "A fast and reliable viewer for PDF, DOCX, and other document formats. Includes annotation tools, text search, and cloud storage integration.",
+    "size": 42.1,
+    "reviews": 900000,
+    "ratingAvg": 4.4,
+    "downloads": 60000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 490000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/2Lbx8hM/glaxy-path.png",
+    "title": "GalaxyPath RPG",
+    "companyName": "Epic Quest Games",
+    "id": 1514,
+    "description": "An open-world sci-fi role-playing game with hundreds of quests, deep character customization, and cross-platform multiplayer support.",
+    "size": 1500.0,
+    "reviews": 450000,
+    "ratingAvg": 4.6,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 115000 },
+      { "name": "5 star", "count": 280000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/kVQp7LWF/home-secure.jpg",
+    "title": "HomeSecure Monitor",
+    "companyName": "IoT Connect Solutions",
+    "id": 1615,
+    "description": "Control and monitor all smart home security devices (cameras, alarms, locks) remotely. Get instant alerts and review past activity logs.",
+    "size": 88.9,
+    "reviews": 32000,
+    "ratingAvg": 4.8,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 20000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/gFhN3jZf/skill-share.png",
+    "title": "SkillShare Courses",
+    "companyName": "Lifelong Learning Inc.",
+    "id": 1716,
+    "description": "Access thousands of video courses taught by industry experts in areas like photography, coding, business, and design. Earn certificates upon completion.",
+    "size": 130.4,
+    "reviews": 180000,
+    "ratingAvg": 4.5,
+    "downloads": 9500000,
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 24000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 80000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/whhFXTBr/travel-conect.jpg",
+    "title": "TravelConnect Booking",
+    "companyName": "Global Journey Co.",
+    "id": 1817,
+    "description": "Find and book flights, hotels, and rental cars with the best deals. Manage your reservations and check-in directly through the app.",
+    "size": 105.5,
+    "reviews": 75000,
+    "ratingAvg": 3.9,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 17000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/FL8ynyBq/paint-pro.png",
+    "title": "PaintPro Digital Art",
+    "companyName": "Creative Canvas Studios",
+    "id": 1918,
+    "description": "Powerful drawing and painting application with advanced brushes, layers, and color mixing tools. Supports pressure-sensitive styluses.",
+    "size": 320.6,
+    "reviews": 55000,
+    "ratingAvg": 4.9,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 41000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Zzv2bJzN/clean-master.jpg",
+    "title": "CleanMaster Utility",
+    "companyName": "System Optimize Ltd.",
+    "id": 2019,
+    "description": "Frees up storage space by clearing cache files, managing large media, and optimizing memory usage for a faster device performance.",
+    "size": 25.9,
+    "reviews": 4000000,
+    "ratingAvg": 4.1,
+    "downloads": 150000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 350000 },
+      { "name": "3 star", "count": 650000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 1500000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/6cwmn6gS/trade-edge.jpg",
+    "title": "EdgeTrade Stocks",
+    "companyName": "Market Dynamics Group",
+    "id": 2120,
+    "description": "Commission-free stock and ETF trading with advanced charting tools. Access real-time quotes and build a personalized investment portfolio.",
+    "size": 65.5,
+    "reviews": 120000,
+    "ratingAvg": 4.5,
+    "downloads": 6500000,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hFbYn5h6/wordflow.jpg",
+    "title": "WordFlow Writer",
+    "companyName": "Creative Suite Digital",
+    "id": 2221,
+    "description": "A minimalist text editor focused on distraction-free writing. Syncs documents across all devices and supports markdown formatting.",
+    "size": 30.1,
+    "reviews": 25000,
+    "ratingAvg": 4.8,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 17000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fzRd2kYH/sky-defender.png",
+    "title": "Sky Defender Game",
+    "companyName": "Digital Fortress Games",
+    "id": 2322,
+    "description": "A classic tower defense strategy game with challenging levels and unique unit upgrades. Defend your base against alien invaders.",
+    "size": 450.9,
+    "reviews": 380000,
+    "ratingAvg": 4.1,
+    "downloads": 10500000,
+    "ratings": [
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/kskRHGjc/medi-track.webp",
+    "title": "MediTrack Reminder",
+    "companyName": "Wellness Solutions Co.",
+    "id": 2423,
+    "description": "Easily manage and track your medication intake with customizable schedules, dose logging, and refill reminders.",
+    "size": 55.0,
+    "reviews": 12000,
+    "ratingAvg": 4.7,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3700 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zWqF3WBV/vote-link.jpg",
+    "title": "VoteLink News",
+    "companyName": "Civic Engagement Tech",
+    "id": 2524,
+    "description": "Unbiased political news aggregator with fact-checking tools, voter registration information, and local election details.",
+    "size": 78.2,
+    "reviews": 50000,
+    "ratingAvg": 3.4,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 12000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1JKqfSwB/audio-pitch.png",
+    "title": "AudioPitch Tuner",
+    "companyName": "Musician's Helper Labs",
+    "id": 2625,
+    "description": "A highly accurate instrument tuner and metronome app. Features include transposition and a wide range of tuning references.",
+    "size": 22.8,
+    "reviews": 75000,
+    "ratingAvg": 4.9,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 56000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/V47gC5Q/drive-doc.png",
+    "title": "DriveDoc Scanner",
+    "companyName": "Paperless Solutions",
+    "id": 2726,
+    "description": "Turns your phone's camera into a portable document scanner. Auto-crop, perspective correction, and PDF export with OCR support.",
+    "size": 48.0,
+    "reviews": 500000,
+    "ratingAvg": 4.4,
+    "downloads": 30000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 260000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RT5fQYFw/puzle-nexus.webp",
+    "title": "PuzzleNexus Block",
+    "companyName": "Casual Gaming Hub",
+    "id": 2827,
+    "description": "A relaxing yet challenging block puzzle game with daily challenges and global leaderboards. Endless gameplay and soothing music.",
+    "size": 150.3,
+    "reviews": 7500000,
+    "ratingAvg": 4.7,
+    "downloads": 350000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 1950000 },
+      { "name": "5 star", "count": 5000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zhb3fbjY/tema-chat.jpg",
+    "title": "TeamChat Connect",
+    "companyName": "Enterprise Solutions Global",
+    "id": 2928,
+    "description": "Secure internal communication and collaboration platform for businesses. Supports video conferencing, file sharing, and project channels.",
+    "size": 98.4,
+    "reviews": 15000,
+    "ratingAvg": 4.0,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/h1g9YYcT/gastro-nav.png",
+    "title": "GastroNav Finder",
+    "companyName": "Local Eats Tech",
+    "id": 3029,
+    "description": "Discover local restaurants and cafes based on cuisine, price, and user ratings. Integrated reservation system and personalized recommendations.",
+    "size": 72.5,
+    "reviews": 1800000,
+    "ratingAvg": 4.3,
+    "downloads": 75000000,
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 550000 },
+      { "name": "5 star", "count": 900000 }
+    ]
+  }
+]
