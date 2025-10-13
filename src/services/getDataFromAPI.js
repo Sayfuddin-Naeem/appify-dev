@@ -1,6 +1,6 @@
 
 const getDataFromAPI = async () => {
-    const apiUrl = "/api/tickets.json";
+    const apiUrl = "/api/apps.json";
     const res = await fetch(apiUrl);
 
     return res.json();

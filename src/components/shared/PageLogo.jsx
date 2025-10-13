@@ -11,7 +11,7 @@ function PageLogo({headingClass = ''}){
               </figure>
             </Link>
             <Link to={'/'}>
-              <h1 className={`font-bold text-gradient text-[1.8rem] lg:text-[2.4rem] cursor-pointer ${headingClass}`}> Appify</h1>
+              <h1 className={`font-bold font-delius text-gradient text-[2.2rem] lg:text-[3.2rem] cursor-pointer ${headingClass}`}> Appify</h1>
             </Link>
         </div>
     );
