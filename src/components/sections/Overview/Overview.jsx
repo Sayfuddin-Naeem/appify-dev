@@ -1,4 +1,5 @@
 import React from 'react'
+import DataCard from '../../features/DataCard/DataCard';
 
 function Overview() {
     const items = [
@@ -13,22 +14,11 @@ function Overview() {
         </h2>
         <div className="flex flex-col lg:flex-row gap-18 lg:gap-9.5">
             {
-                items.map(item => <DataCard item={item} />)
+                items.map((item, index) => <DataCard key={index+1} item={item} />)
             }
         </div>
     </div>
   )
-}
-
-function DataCard({item}){
-    const {text1, content, text2} = item;
-    return(
-        <div className='flex flex-col gap-4 lg:gap-6'>
-          <p className="">{text1}</p>
-          <p className="font-extrabold text-[5.4rem] lg:text-[6.4rem]">{content}</p>
-          <p className="">{text2}</p>
-        </div>
-    );
 }
 
 export default Overview;
