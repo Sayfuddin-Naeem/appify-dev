@@ -1,12 +1,20 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import AppsCards from '../../shared/AppsCards';
 import Loader from '../../shared/Loader';
 import getCardsRandomly from '../../../utils/getCardsRandomly';
 
 function TrendingApps({data}) {
+  const [loading, setLoading] = useState(true);
     
-    const cards = getCardsRandomly(data, 8, true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+    
+  const cards = getCardsRandomly(data, 8, true);
     // console.log("length: ",filterData.length)
   return (
     <div className='containers py-15 lg:py-32 text-center'>
@@ -16,11 +24,13 @@ function TrendingApps({data}) {
         <p className="text-dark-05 text-[1.6rem] lg:text-[2rem] mt-[1.6rem]">
             Explore All Trending Apps on the Market developed by us
         </p>
-        <div className="my-16 grid grid-cols-[repeat(auto-fill,minmax(34.8rem,1fr))] gap-6.5">
-            <Suspense fallback={<Loader />}>
-                <AppsCards cards={cards}></AppsCards>
-            </Suspense>
-        </div>
+        {
+          loading ? <Loader /> :(
+            <div className="my-16 grid grid-cols-[repeat(auto-fill,minmax(34.8rem,1fr))] gap-6.5">
+              <AppsCards cards={cards}></AppsCards>
+            </div>
+          )
+        }
         <Link to={'/apps'}>
           <button className='py-[1.2rem] px-[1.6rem] rounded-[0.4rem] bg-gradient text-white font-semibold cursor-pointer'>Show All</button>
         </Link>

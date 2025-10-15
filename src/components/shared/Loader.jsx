@@ -1,15 +1,30 @@
-import React from 'react';
-import { TrophySpin } from 'react-loading-indicators';
+import React, { useEffect } from 'react';
+import { HashLoader } from 'react-spinners';
 
-function Loader() {
+function Loader({time, setLoading}) {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000 * time);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className='flex justify-center items-center my-6'>
-        <TrophySpin color={["#32cd32", "#327fcd", "#cd32cd", "#cd8032"]}
-        text="Loading ..."
-        textColor={'#632EE3'}
-        size='medium' />
-    </div>
+    <LoaderContent/>
   )
+}
+
+function LoaderContent(){
+  return (
+    <div className='flex justify-center items-center my-10'>
+      <HashLoader
+        color='#9F62F2'
+        size={70}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+    </div>
+  );
 }
 
 export default Loader;

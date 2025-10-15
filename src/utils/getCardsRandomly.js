@@ -10,7 +10,7 @@ function getCardsRandomly(data, limit = 0, isFilter = false){
     }
 
     const indexes = getRandomIndex(limit);
-    console.log(indexes)
+    // console.log(indexes)
     const cards = [];
     for(let i = 0; i < limit; i++){
         const index = indexes[i];

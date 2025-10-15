@@ -2,6 +2,7 @@ import React from 'react'
 import AppsCard from '../features/AppsCard/AppsCard';
 
 function AppsCards({cards}) {
+
   return (
     <>
       {
