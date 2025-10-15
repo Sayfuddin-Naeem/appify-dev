@@ -2,11 +2,11 @@ import React, { Suspense } from 'react';
 import { Link } from 'react-router';
 import AppsCards from '../../shared/AppsCards';
 import Loader from '../../shared/Loader';
-import getRandomIndex from '../../../utils/getRandomIndex';
+import getCardsRandomly from '../../../utils/getCardsRandomly';
 
 function TrendingApps({data}) {
     
-    const cards = getTop8Cards(data);
+    const cards = getCardsRandomly(data, 8, true);
     // console.log("length: ",filterData.length)
   return (
     <div className='containers py-15 lg:py-32 text-center'>
@@ -26,23 +26,6 @@ function TrendingApps({data}) {
         </Link>
     </div>
   )
-}
-
-function getTop8Cards(data){
-    const filterData = data.filter(elm => {
-        return elm.ratingAvg > 4.5;
-    });
-
-    const limit = filterData.length;
-    const indexes = getRandomIndex(limit);
-    console.log(indexes)
-    const cards = [];
-    for(let i = 0; i < 8; i++){
-        const index = indexes[i];
-        cards.push(filterData[index.toString()]);
-    }
-
-    return cards;
 }
 
 export default TrendingApps;
