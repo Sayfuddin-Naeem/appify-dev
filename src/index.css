@@ -81,7 +81,7 @@
   }
 
   .search{
-    @apply input input-lg w-130 h-15 bg-gray-50 border border-gray-300 rounded-[0.4rem] py-[1.2rem] px-[1.6rem] flex gap-4 justify-center items-center;
+    @apply input input-lg w-130 h-15 bg-gray-50 border border-gray-300 rounded-[0.4rem] pl-[1.6rem] flex gap-4 justify-center items-center;
   }
 
 }

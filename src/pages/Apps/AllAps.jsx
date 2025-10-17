@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLoaderData } from 'react-router';
+import { Link, useRouteLoaderData } from 'react-router';
 import { PiMagnifyingGlassThin } from "react-icons/pi";
 import AppsCards from '../../components/shared/AppsCards';
 import Loader from '../../components/shared/Loader';
@@ -10,26 +10,30 @@ function AllApps() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
   
-  const initialData = useLoaderData();
+  const initialData = useRouteLoaderData("apps");
   if(data.length === 0 && initialData){
     setData(initialData);
   }
   // console.log(data)
   function handleSearch(e, isSubmit = true){
+    // console.log(isSubmit);
     if(isSubmit)e.preventDefault();
+    const curVal = (isSubmit ? e.target['0'] : e.target).value;
     // console.log(data, initialData)
     setLoading(true);
     setError(false);
-    setData(initialData);
+    
+    let value = curVal.toLowerCase();
 
-    let value = (isSubmit ? e.target['0'] : e.target).value.toLowerCase();
-
-    const filterData = data.filter(elm => (
+    const filterData = initialData.filter(elm => (
       elm.title.toLowerCase().includes(value)
     ));
+    // console.log(filterData, filterData.length, value);
     
-    setData(filterData);
-    if(filterData.length === 0){
+    if(filterData.length > 0){
+      setData(filterData);
+    }
+    else{
       setError(true);
     }
   }
@@ -60,7 +64,7 @@ function AllApps() {
               id="searchApp"
               placeholder='Search app'
               onChange={(e)=> handleSearch(e, false)}
-              className='focus:outline-0' />
+              className='focus:outline-0 py-[1.2rem] pr-[1.6rem]' />
             </div>
           </form>
         </div>

@@ -4,7 +4,7 @@ import router from './Routes/Routes';
 import Loader from './components/shared/Loader';
 
 function App() {
-  const loader = <Loader />
+  const loader = <Loader time={2}/>
   return (
     <>
       <RouterProvider

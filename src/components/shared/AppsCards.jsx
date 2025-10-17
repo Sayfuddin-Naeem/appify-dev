@@ -1,5 +1,6 @@
 import React from 'react'
 import AppsCard from '../features/AppsCard/AppsCard';
+import { Link } from 'react-router';
 
 function AppsCards({cards}) {
 
@@ -7,7 +8,9 @@ function AppsCards({cards}) {
     <>
       {
         cards.map(card => (
-            <AppsCard key={card.id} card={card}></AppsCard>
+            <Link key={card.id} to={`/apps/${card.id}`}>
+              <AppsCard card={card}></AppsCard>
+            </Link>
         ))
       }
     </>

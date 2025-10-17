@@ -7,7 +7,7 @@ function FooterContent() {
     <div className="grid place-items-center lg:place-items-start grid-cols-1 gap-12 2xl:gap-40 lg:grid-cols-[1.5fr_repeat(4,1fr)] text-center lg:text-left">
         <div className="flex flex-col items-center lg:items-start gap-[1.6rem]">
             <PageLogo></PageLogo>
-            <p className="text-dark-06 text-center lg:text-justify mt-[1.6rem]">
+            <p className="text-dark-06 text-center lg:text-left mt-[1.6rem]">
                 Appify Store is your one-stop destination for discovering, downloading, and managing high-quality mobile and web applications. Explore trending apps, track updates, and stay connected with innovative developers across the world.
             </p>
         </div>

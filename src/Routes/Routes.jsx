@@ -6,6 +6,8 @@ import Home from "../pages/Home/Home";
 import AllAps from "../pages/Apps/AllAps";
 import Installation from "../pages/Installation/Installation";
 import getDataFromAPI from "../services/getDataFromAPI";
+import AppsDetails from "../pages/AppsDetails/AppsDetails";
+import Loader from "../components/shared/Loader";
 
 
 const router = createBrowserRouter([
@@ -13,6 +15,7 @@ const router = createBrowserRouter([
         path: "/",
             Component: Root,
             errorElement: <PageNotFound />,
+            HydrateFallback: Loader,
 
             children: [
                 {
@@ -22,15 +25,25 @@ const router = createBrowserRouter([
                 },
 
                 {
+                    id: 'apps',
                     path: '/apps',
-                    Component: AllAps,
                     loader: getDataFromAPI,
+                    children: [
+                        {
+                            index: true,
+                            Component: AllAps,
+                        },
+                        {
+                            path: ':id',
+                            Component: AppsDetails,
+                        },
+                    ],
                 },
 
                 {
                     path: '/installation',
                     Component: Installation,
-                }
+                },
             ],
     }
 ]);

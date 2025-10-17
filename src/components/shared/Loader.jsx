@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { HashLoader } from 'react-spinners';
 
-function Loader({time, setLoading}) {
+function Loader({time = 1, setLoading}) {
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false);
+      if(setLoading)setLoading(false);
     }, 1000 * time);
     return () => clearTimeout(timer);
   }, []);
