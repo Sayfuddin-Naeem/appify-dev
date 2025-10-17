@@ -5,7 +5,7 @@ import ratingsImg from '../../../assets/images/icon-ratings.png';
 import reviewImg from '../../../assets/images/icon-review.png';
 
 function AppDetailCard({app}) {
-  const {title, image, companyName, reviews, ratingAvg, downloads, size} = app;
+  const {id, title, image, companyName, reviews, ratingAvg, downloads, size} = app;
   const appInfo = [
     {image: downloadImg, text: "Downloads", value: downloads},
     {image: ratingsImg, text: "Average Ratings", value: ratingAvg},
@@ -13,7 +13,7 @@ function AppDetailCard({app}) {
   ];
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_3fr] gap-16">
-        <figure className='bg-white rounded-2xl'>
+        <figure className='bg-white rounded-2xl flex justify-center items-center p-8'>
             <img
                 src={image}
                 alt={title}
@@ -32,15 +32,16 @@ function AppDetailCard({app}) {
             <div className="divider"></div>
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-[2.4rem]">
                 {
-                appInfo.map(elm => (
+                appInfo.map((elm, index) => (
                     <AppInfo
+                        key={id+index}
                         image={elm.image}
                         text={elm.text}
                         value={elm.value} />
                 ))
                 }
             </div>
-            <button className="w-115 py-[1.4rem] px-8 rounded-[0.4rem] flex justify-center items-center gap-10 bg-download text-white text-[1.8rem] lg:text-[2rem] font-semibold">
+            <button className="btn-installed">
                 Install Now ({size} MB)
             </button>
 

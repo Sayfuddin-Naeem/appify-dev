@@ -21,7 +21,7 @@
   --color-gradient: linear-gradient(125.07deg, #632EE3,#9F62F2 100%);
   
 
-  --shadow-card: 0px 4px 16px 0px rgba(0,0,0,0.08);
+  /* --shadow-card: 0px 4px 16px 0px rgba(0,0,0,0.08); */
   /* font  */
   --font-inter: "Inter", sans-serif;
   --font-delius: "Delius", cursive;
@@ -74,6 +74,10 @@
   .btn-gradient{
     @apply text-white text-[1.4rem] lg:text-[1.6rem] font-semibold px-[1.2rem] py-[1rem] lg:px-[1.6rem] lg:py-[1.2rem] rounded-[0.4rem] flex justify-center items-center;
     background: var(--color-gradient);
+  }
+
+  .btn-installed{
+    @apply w-115 py-[1.4rem] px-8 rounded-[0.4rem] flex justify-center items-center gap-10 bg-download text-white text-[1.8rem] lg:text-[2rem] font-semibold cursor-pointer;
   }
 
   .bg-gradient{
