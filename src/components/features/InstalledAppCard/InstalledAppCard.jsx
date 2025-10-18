@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa6";
 import formatNumber from '../../../utils/formatNumber';
 
 function InstalledAppCard({app}) {
-  const {id, title, image, ratingAvg, downloads, size} = app;
+  const { title, image, ratingAvg, downloads, size } = app;
   return (
     <div className='card-installed'>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-[1.6rem]">

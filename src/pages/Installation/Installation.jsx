@@ -4,9 +4,12 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { getDataFromLS } from '../../utils/LocalStorage';
 import InstalledAppCard from '../../components/features/InstalledAppCard/InstalledAppCard';
 import { useLoaderData } from 'react-router';
+import Loader from '../../components/shared/Loader';
 
 function Installation() {
   const [installedApps, setInstalledApps] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   const apiData = useLoaderData();
   // console.log(apiData)
 
@@ -18,6 +21,14 @@ function Installation() {
     // console.log(filteredData);
     setInstalledApps(filteredData);
   }, [apiData]);
+
+  const handleSortBySize = (isLow = true)=> {
+    const sortedApps = installedApps.sort((a, b) => (
+      isLow ? (a.size - b.size) : (b.size - a.size)
+    ));
+    setInstalledApps(sortedApps);
+    setLoading(true);
+  };
 
   const totalApps = installedApps.length;
   return (
@@ -41,9 +52,9 @@ function Installation() {
             <div tabIndex={0} role="button" className="btn w-max h-15 m-1 text-dark-05 text-[1.4rem] rounded-[0.5rem]">
               Sort By Size <IoMdArrowDropdown />
             </div>
-            <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-5 mt-1 w-52 p-2 shadow-sm">
-              <li><a>Low - High</a></li>
-              <li><a>High - Low</a></li>
+            <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-5 mt-1 ml-3 w-52 p-2 shadow-sm">
+              <li><a onClick={handleSortBySize}>Low - High</a></li>
+              <li><a onClick={() => handleSortBySize(false)}>High - Low</a></li>
             </ul>
           </div>
         </div>
@@ -52,9 +63,11 @@ function Installation() {
 
         <div className="flex flex-col justify-center items-center gap-4">
           {
-            installedApps.map(app => (
-              <InstalledAppCard key={app.id} app={app} />
-            ))
+            loading ? <Loader setLoading={setLoading} /> : (
+              installedApps.map(app => (
+                <InstalledAppCard key={app.id} app={app} />
+              ))
+            )
           }
         </div>
       </div>
