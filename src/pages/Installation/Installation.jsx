@@ -5,11 +5,12 @@ import { getDataFromLS } from '../../utils/LocalStorage';
 import InstalledAppCard from '../../components/features/InstalledAppCard/InstalledAppCard';
 import { useLoaderData } from 'react-router';
 import Loader from '../../components/shared/Loader';
+import { toast } from 'react-toastify';
 
 function Installation() {
   const [installedApps, setInstalledApps] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  
   const apiData = useLoaderData();
   // console.log(apiData)
 
@@ -22,12 +23,22 @@ function Installation() {
     setInstalledApps(filteredData);
   }, [apiData]);
 
-  const handleSortBySize = (isLow = true)=> {
+  function handleSortBySize(isLow = true){
     const sortedApps = installedApps.sort((a, b) => (
       isLow ? (a.size - b.size) : (b.size - a.size)
     ));
     setInstalledApps(sortedApps);
     setLoading(true);
+
+    toast.info(
+      <p>
+        Sorted by <span className="text-download font-semibold">Size</span> — {isLow ? "Low to High 📊" : "High to Low 📉"}
+      </p>,
+      {
+        icon: "📦",
+        autoClose: 1500,
+      }
+    );
   };
 
   const totalApps = installedApps.length;
@@ -46,7 +57,7 @@ function Installation() {
       <div className="mt-16">
         <div className="flex justify-between gap-6">
           <p className="text-gradient text-[1.8rem] lg:text-[2.4rem] font-semibold active flex flex-col">
-            {totalApps} Apps Found
+            {loading ? "" : totalApps} Apps Found
           </p>
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn w-max h-15 m-1 text-dark-05 text-[1.4rem] rounded-[0.5rem]">
@@ -65,7 +76,12 @@ function Installation() {
           {
             loading ? <Loader setLoading={setLoading} /> : (
               installedApps.map(app => (
-                <InstalledAppCard key={app.id} app={app} />
+                <InstalledAppCard
+                  key={app.id}
+                  app={app}
+                  setLoading={setLoading}
+                  installedApps={installedApps}
+                  setInstalledApps={setInstalledApps} />
               ))
             )
           }

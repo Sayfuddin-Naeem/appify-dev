@@ -2,9 +2,12 @@ import React from 'react';
 import { RxDownload } from "react-icons/rx";
 import { FaStar } from "react-icons/fa6";
 import formatNumber from '../../../utils/formatNumber';
+import { removeDataFromLS } from '../../../utils/LocalStorage';
+import { toast } from 'react-toastify';
 
-function InstalledAppCard({app}) {
-  const { title, image, ratingAvg, downloads, size } = app;
+function InstalledAppCard(props) {
+  const {app} = props;
+  const {id, title, image, ratingAvg, downloads, size } = app;
   return (
     <div className='card-installed'>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-[1.6rem]">
@@ -28,11 +31,35 @@ function InstalledAppCard({app}) {
                 </div>
             </div>
         </div>
-        <button className="btn-installed text-[1.6rem]">
+        <button
+          onClick={() => handleUninstall({id, title, parentProps: props})}
+          className="btn-installed text-[1.6rem]">
             Uninstall
         </button>
     </div>
   )
+}
+
+function handleUninstall({id, title, parentProps}){
+    const {setLoading, installedApps, setInstalledApps} = parentProps;
+    setLoading(true);
+    removeDataFromLS(id, "installedApps");
+
+    const updatedApps = installedApps.filter(elm => elm.id !== id);
+    setInstalledApps(updatedApps);
+
+    toast.info(
+      <p>
+        The app <span className="text-rating font-semibold">{title}</span> has been uninstalled ❌🗑️
+      </p>,
+      {
+        icon: '🗑️',
+        autoClose: 2000,
+        position: "top-right",
+        pauseOnHover: true,
+        pauseOnFocusLoss: true,
+      }
+    );
 }
 
 export default InstalledAppCard;

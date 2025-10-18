@@ -48,7 +48,7 @@ function AppDetailCard({app}) {
                 alt={title}
                 className='w-full object-cover object-center' />
         </figure>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col items-center lg:items-start gap-12">
             <div className="text-center lg:text-left">
                 <h1 className="text-dark-04 text-[3.2rem] font-bold capitalize">{title}</h1>
                 <p className="text-dark-05 text-[1.6rem] lg:text-[2rem] font-bold mt-[0.8rem]">
@@ -72,7 +72,7 @@ function AppDetailCard({app}) {
             </div>
             <button
               onClick={handleInstallBtn}
-              className="btn-installed text-[1.8rem] lg:text-[2rem]">
+              className="btn-installed w-100 text-[1.8rem] lg:text-[2rem]">
                 {
                   isInstall ? "Installed" : `Install Now (${size} MB)`
                 }
