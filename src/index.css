@@ -77,7 +77,7 @@
   }
 
   .btn-installed{
-    @apply w-100 lg:w-max py-[1.4rem] px-8 rounded-[0.4rem] flex justify-center items-center gap-10 bg-download text-white font-semibold cursor-pointer;
+    @apply w-max py-[1.4rem] px-8 rounded-[0.4rem] flex justify-center items-center gap-10 bg-download text-white font-semibold cursor-pointer;
   }
 
   .bg-gradient{
