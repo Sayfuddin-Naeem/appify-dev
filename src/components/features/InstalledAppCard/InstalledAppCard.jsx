@@ -14,7 +14,7 @@ function InstalledAppCard(props) {
             <figure className='w-60 h-60 lg:w-32 lg:h-32'>
                 <img src={image} alt={title} className='w-full rounded-[0.8rem]' />
             </figure>
-            <div className="flex flex-col items-center lg:items-start lg:justify-between gap-4 lg:gap-10">
+            <div className="flex flex-col items-center lg:items-start lg:justify-between gap-6">
                 <h3 className="text-dark-04 font-medium text-[2rem]">{title}</h3>
                 <div className="flex gap-[1.6rem]">
                     <p className="text-download flex gap-1 items-center">
