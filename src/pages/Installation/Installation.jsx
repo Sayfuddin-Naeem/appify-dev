@@ -23,25 +23,28 @@ function Installation() {
     setInstalledApps(filteredData);
   }, [apiData]);
 
-  function handleSortBySize(isLow = true){
-    const sortedApps = installedApps.sort((a, b) => (
-      isLow ? (a.size - b.size) : (b.size - a.size)
-    ));
-    setInstalledApps(sortedApps);
-    setLoading(true);
+  const totalApps = installedApps.length;
 
-    toast.info(
-      <p>
-        Sorted by <span className="text-download font-semibold">Size</span> — {isLow ? "Low to High 📊" : "High to Low 📉"}
-      </p>,
-      {
-        icon: "📦",
-        autoClose: 1500,
-      }
-    );
+  function handleSortBySize(isLow = true){
+    if(totalApps){
+      const sortedApps = installedApps.sort((a, b) => (
+        isLow ? (a.size - b.size) : (b.size - a.size)
+      ));
+      setInstalledApps(sortedApps);
+      setLoading(true);
+
+      toast.info(
+        <p>
+          Sorted by <span className="text-download font-semibold">Size</span> — {isLow ? "Low to High 📊" : "High to Low 📉"}
+        </p>,
+        {
+          icon: "📦",
+          autoClose: 1500,
+        }
+      );
+    }
   };
 
-  const totalApps = installedApps.length;
   return (
     <div className='containers bg-bg-body py-15 lg:py-32'>
       <div className="text-center">

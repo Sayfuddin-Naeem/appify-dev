@@ -72,7 +72,7 @@ function AppDetailCard({app}) {
             </div>
             <button
               onClick={handleInstallBtn}
-              className="btn-installed w-100 text-[1.8rem] lg:text-[2rem]">
+              className="btn-installed text-[1.8rem] lg:text-[2rem]">
                 {
                   isInstall ? "Installed" : `Install Now (${size} MB)`
                 }
