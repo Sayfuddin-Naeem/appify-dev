@@ -68,7 +68,7 @@
     bottom: 0;
     height: 0.126rem;
     background: var(--color-gradient);
-    @apply lg:w-full w-38;
+    @apply lg:w-full w-53;
   }
 
   .btn-gradient{
@@ -77,11 +77,15 @@
   }
 
   .btn-installed{
-    @apply w-115 py-[1.4rem] px-8 rounded-[0.4rem] flex justify-center items-center gap-10 bg-download text-white text-[1.8rem] lg:text-[2rem] font-semibold cursor-pointer;
+    @apply w-max py-[1.4rem] px-8 rounded-[0.4rem] flex justify-center items-center gap-10 bg-download text-white font-semibold cursor-pointer;
   }
 
   .bg-gradient{
     background: var(--color-gradient); 
+  }
+
+  .card-installed{
+    @apply flex lg:justify-between justify-center items-center bg-white p-[1.6rem] rounded-[0.4rem] w-11/12 lg:w-full;
   }
 
   .search{

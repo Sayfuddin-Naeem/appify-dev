@@ -1,23 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import formatNumber from '../../../utils/formatNumber';
 import downloadImg from '../../../assets/images/icon-downloads.png';
 import ratingsImg from '../../../assets/images/icon-ratings.png';
 import reviewImg from '../../../assets/images/icon-review.png';
+import { toast } from 'react-toastify';
+import { hasDataLS, setDataToLS } from '../../../utils/LocalStorage';
 
 function AppDetailCard({app}) {
   const {id, title, image, companyName, reviews, ratingAvg, downloads, size} = app;
+
+  const [isInstall, setIsInstall] = useState(() => hasDataLS(id, "installedApps"));
+
   const appInfo = [
     {image: downloadImg, text: "Downloads", value: downloads},
     {image: ratingsImg, text: "Average Ratings", value: ratingAvg},
     {image: reviewImg, text: "Total Reviews", value: reviews},
   ];
+
+  function handleInstallBtn(){
+    if(!isInstall){
+        setIsInstall(true);
+        const status = setDataToLS({id: id}, "installedApps");
+        
+        if(status){
+            toast.success(
+                <p>
+                    The app - <span className='text-download font-medium'>{title}</span> is installed successfully !
+                </p>
+            );
+        }
+        else{
+            toast.error(
+                <p>
+                    Failed to install the app - <span className="text-rating font-medium">{title}</span>. Please try again.
+                </p>
+            );
+        }
+
+    }
+  }
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_3fr] gap-16">
         <figure className='bg-white rounded-2xl flex justify-center items-center p-8'>
             <img
                 src={image}
                 alt={title}
-                className='w-full' />
+                className='w-full object-cover object-center' />
         </figure>
         <div className="flex flex-col gap-12">
             <div className="text-center lg:text-left">
@@ -41,8 +70,12 @@ function AppDetailCard({app}) {
                 ))
                 }
             </div>
-            <button className="btn-installed">
-                Install Now ({size} MB)
+            <button
+              onClick={handleInstallBtn}
+              className="btn-installed text-[1.8rem] lg:text-[2rem]">
+                {
+                  isInstall ? "Installed" : `Install Now (${size} MB)`
+                }
             </button>
 
         </div>

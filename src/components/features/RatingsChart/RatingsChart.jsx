@@ -24,15 +24,15 @@ function RatingsChart({ratings}) {
           <YAxis
             type="category"
             dataKey="name"
-            axisLine={false}
-            tickLine={false}
+            axisLine={true}
+            tickLine={true}
             tick={{ fill: "#627382", fontSize: 18 }}
           />
 
           <XAxis
             type="number"
-            axisLine={false}
-            tickLine={false}
+            axisLine={true}
+            tickLine={true}
             tick={{ fill: "#627382", fontSize: 18 }}
           />
           
@@ -41,7 +41,7 @@ function RatingsChart({ratings}) {
           <Bar
             dataKey="count"
             fill="#FF8811"
-            barSize={32}
+            barSize={28}
             radius={[5, 5, 5, 5]}
           />
         </BarChart>

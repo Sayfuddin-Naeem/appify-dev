@@ -12,7 +12,7 @@ function AppsDetails() {
   if(!app){
     return <AppsNotFound />;
   }
-  const {id, description, ratings} = app;
+  const {description, ratings} = app;
 
   
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../../components/sections/Navbar/Navbar';
 import { Outlet, useNavigation } from 'react-router';
+import { Bounce, ToastContainer } from 'react-toastify';
 import Footer from '../../components/sections/Footer/Footer';
 import Loader from '../../components/shared/Loader';
 
@@ -19,6 +20,20 @@ function Root() {
           </>
         )
       }
+      
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+        />
     </div>
   )
 }
